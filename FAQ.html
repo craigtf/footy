@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Prediction League</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-nav">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Football Prediction League</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#submit-prediction">Submit Prediction</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#title-history">Title History</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#help">Help</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.php">Login/Register</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <div class="card mt-5">
+                    <div class="card-header text-center">
+                        <h2>Game Rules</h2>
+                    </div>
+                    <div class="card-body">
+                        <p>Our game consists of 6 individual seasons for players. There will be 5 6 rounds of games and the final season will consist of 8 rounds so 7 seasons within the real world 38 game season. Players will pay entry of £10 at the start of each new season. The prize money will be split among the top two or three players depending on how many entries there are. Players will be presented with all the PL fixtures for that week and will have to predict the outcome of each either a home win/ draw or away win. A correct prediction will yield five points and an incorrect prediction will deduct 1 point from the current round total.</p>
+
+                        <p>Each individual round will have an opportunity for bonus points over three different games:</p>
+                        <ul>
+                            <li>Game 1: Correct score. If a player correctly predicts the correct score of said game they will be awarded 15 bonus points.</li>
+                            <li>Game 2: Correct total match goals. If a player correctly predicts the exact amount of goals in said game they will receive 10 bonus points.</li>
+                            <li>Game 3: Correct time of first goal. 7 options for this multiple choice: first goal in 0-15min, 15-30 mins,30-halftime. 45-60, 60-
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-md-8">
+                                            <h2>FAQ</h2>
+                            
+                                            <div class="accordion" id="accordionExample">
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="headingOne">
+                                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                            Can I change my predictions after I submit them?
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                                        <div class="accordion-body">
+                                                            No, once you have submitted your predictions, they cannot be changed.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                            
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="headingTwo">
+                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                            How are bonus points calculated?
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                                        <div class="accordion-body">
+                                                            Bonus points are awarded for correctly predicting the correct score, total match goals, and time of first goal for certain games. If you predict the correct score, you will receive 15 bonus points. If you predict the correct total match goals, you will receive 10 bonus points. If you predict the correct time of first goal for a game, you will receive 5 bonus points.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                            
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="headingThree">
+                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                            When are the prize winners announced?
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                                        <div class="accordion-body">
+                                                            The prize winners will be announced at the end of each season.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                            
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="headingFour">
+                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                                            What happens to the money I pay to enter the competition?
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                                        <div class="accordion-body">
+                                                            10% of all money paid to the competition will be held until the end of the season. The player with the most league titles will receive this extra cash as a reward.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                            
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="headingFive">
+                                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                                        Is there a limit on the number of entries per player?
+                                                      </button>
+                                                    </h2>
+                                                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                                                      <div class="accordion-body">
+                                                        Yes, each player is only allowed one entry per season. If we discover that a player has entered the competition multiple times, all of their entries will be disqualified and no refunds will be given.
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  
+                                                  <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="headingSix">
+                                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                                        What happens if there is a tie in the final standings?
+                                                      </button>
+                                                    </h2>
+                                                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                                                      <div class="accordion-body">
+                                                        In the event of a tie in the final standings, the prize money will be split equally among the players who are tied. For example, if two players tie for first place, they will split the first and second place prizes equally, and the third place prize will not be awarded.
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  
+                                                  <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="headingSeven">
+                                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                                        How is the extra cash prize for the league title winner determined?
+                                                      </button>
+                                                    </h2>
+                                                    <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                                                      <div class="accordion-body">
+                                                        10% of all entry fees will be set aside for the extra cash prize for the player with the most league titles. At the end of each season, this money will be added to the prize pool for the season winner. If there is a tie for the most league titles, the extra cash prize will be split equally among the tied players.
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  
+                                                  <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="headingEight">
+                                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                                        What if a game is cancelled or postponed?
+                                                      </button>
+                                                    </h2>
+                                                    <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+                                                      <div class="accordion-body">
+                                                        If a game is cancelled or postponed, it will not count towards that round's predictions. If the game is rescheduled for a later date, it will be included in a future round of predictions. 
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  
+                                                  <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="headingNine">
+                                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine">
+                                                        Can I get a refund if I decide not to participate in the league after paying my entry fee?
+                                                        </button>
+                                                        </h2>
+                                                        <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample">
+                                                        <div class="accordion-body">
+                                                        No, there are no refunds for entry fees once you have paid and submitted your predictions.
+                                                        </div>
+                                                        </div>
+                                                        </div>
+                                                        </div>
+                                                        </div>
+                                                        </div>
+                                                        </div>
+                                                        </li>
+                                                        </ul>
+                                                        <p>The prize for each individual season is paid at the end of that season, and players will have to buy back in to start the next season. The league table resets at the end of each season to start again for the next six weeks, or eight weeks if it is the final season of the real-world season.</p>
+                                                        <p>By participating in this game, you agree to all of the rules and terms outlined above. Good luck and have fun!</p>
+                                                        </div>
+                                                        </div>
+                                                        </div>
+                                                        </div>
+                                                        </main>
+                                                        <footer class="bg-light text-center py-3">
+                                                            <p>Football Prediction League &copy; 2023</p>
+                                                        </footer>
+                                                        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+                                                    </body>
+                                                    </html>
+                                                  
+                            
